@@ -15,7 +15,7 @@ public class Order {
     @Column(name = "order_id")
     private int orderId;
 
-    @Column(name = "order_code")
+    @Column(name = "order_date")
     private Date dateCreated;
     @Column(name = "purchase_address", length = 512)
     private String purchaseAddress;

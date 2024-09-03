@@ -12,10 +12,13 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
     private int userId;
-    @Column(name = "username")
+    @Column(name = "last_name")
     private String lastName; //ho
+
     @Column(name = "first_name")
     private  String firstName; //ten
+    @Column(name = "username")
+    private String username;
     @Column(name = "password", length = 512)
     private String password;
     @Column(name = "gender")
