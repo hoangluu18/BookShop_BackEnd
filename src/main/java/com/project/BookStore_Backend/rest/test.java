@@ -22,7 +22,7 @@ public class test {
 
     @GetMapping("/test")
     public String testOrderDetailRepo() {
-        Optional<Book> book = orderDetailRepo.findById(1);
+        Optional<Book> book = orderDetailRepo.findById(5);
         return "Number of OrderDetail records: " + book.get();
     }
 }
